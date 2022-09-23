@@ -1,4 +1,8 @@
-servlets\PruebaServlet.class
 beans\Users.class
 beans\Books.class
 beans\Invoice.class
+controller\UsuarioController.class
+controller\IUsuarioController.class
+servlets\PruebaServlet.class
+test\OperacionesDB.class
+connection\DBConnection.class

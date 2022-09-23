@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="img/logo.ico"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="container" style="height: 100vh;">
+
+        <div class="row justify-content-center" style="height: 100vh;padding-top: 70px;">
+            <div class="text-center col-4 p-0">
+                <img class="shadow-lg" src="img/login.png" alt=""
+                    style="height: 450px;border-top-left-radius: 18px;border-bottom-left-radius: 18px;">
+            </div>
+            <div class="text-center col-4 p-3 shadow-lg"
+                style="background: white; height: 450px;border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                <h2 class="mb-4 mt-4">Bienvenido</h2>
+                <hr style="height:3px;border-width:0;background-color:rgb(67, 9, 121); color:rgb(46, 3, 87) solid;">
+                <p class="mb-4 mt-0">Explora un mundo totalmente nuevo!</p>
+                <form id="form-login" action="" class="form">
+                    <div class="form-group ml-4 mr-4 mt-3 mb-4">
+                        <input id="UserName" type="text" name="name" class="form-control" placeholder="Usuario"
+                            required>
+                    </div>
+                    <div class="form-group ml-4 mr-4 mt-3 mb-4" style="margin-bottom: 20px;">
+                        <input id="Contrasena" type="password" name="phone" class="form-control" placeholder="Contraseña"
+                            required>
+                    </div>
+                    <div class="form-group ml-4 mr-4 mt-4 mb-4 d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div>
+                    <div class="form-group ml-4 mr-4 mt-4 mb-4 d-grid gap-2">
+                        <p style="font-size: 14px">¿Aún no tienes una cuenta? <a href="register.html"><strong class="h6" href="#"
+                                style="color:rgb(46, 3, 87)">Regístrate</strong></a></p>
+                    </div>
+                    <div id="login-error" class="alert alert-danger d-none" role="alert">
+                        Usuario o contraseña incorrectos!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

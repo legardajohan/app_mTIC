@@ -1,7 +1,7 @@
 package beans;
 
 public class Users {
-    private int username;
+    private String username;
     private String contrasena;
     private String nombre;
     private String apellidos;
@@ -9,7 +9,7 @@ public class Users {
     private double saldo;
     private boolean premium;
 
-    public Users(int username, String contrasena, String nombre, String apellidos, String email, double saldo, boolean premium) {
+    public Users(String username, String contrasena, String nombre, String apellidos, String email, double saldo, boolean premium) {
         this.username = username;
         this.contrasena = contrasena;
         this.nombre = nombre;
@@ -19,11 +19,11 @@ public class Users {
         this.premium = premium;
     }
 
-    public int getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(int username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingUp</title>
+    <link rel="icon" href="img/logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="container" style="height: 100vh;">
+
+    <div class="row justify-content-center" style="height: 100vh;padding-top: 70px;">
+                <div class="text-center p-0" style="width:435px">
+                    <img class="shadow-lg" src="img/login.png" alt="" style="height: 500px;border-top-left-radius: 18px;border-bottom-left-radius: 18px;">
+                </div>
+                <div class="text-center col-4 p-3 shadow-lg" style="background: white; height: 500px;width: 440px;border-bottom-right-radius: 18px; border-top-right-radius: 18px;">
+                    <h3 class="mb-0">Únete hoy</h3>
+                    <hr class="m-2" style="height:3px;border-width:0;background-color:rgb(67, 9, 121); color:rgb(46, 3, 87) solid;">
+                    <form id="form-register" action="" class="form">
+                        <div class="form-group mb-3">
+                            <input id="InputUserName" type="text" class="form-control" placeholder="Nombre de usuario" required>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="form-group col-md-6">
+                                <input type="password" class="form-control" id="InputContrasena" placeholder="Contraseña" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="password" class="form-control" id="InputContrasenaRepeat" placeholder="Repetir contraseña" required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" name="name" class="form-control" id="InputName" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" name="lastname" class="form-control" id="InputLastNames" placeholder="Apellidos" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" name="email" class="form-control" id="InputEmail" placeholder="Correo" required>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="InputSaldo" placeholder="0" min="0" max="10000" value="0" required>
+                            </div>
+                            <div class="form-check col-md-3">
+                                <input type="checkbox" class="form-check-input" id="InputPremium">
+                                <label class="form-check-label m-0" for="input-premium">Premium</label>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Registrarme</button>
+                        </div>
+                        <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+                    </form>
+                </div>
+        </div>
+    </div>    
+</body>
+</html>
